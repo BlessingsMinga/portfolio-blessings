@@ -1,6 +1,13 @@
-module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+/** @type {import('tailwindcss').config} */
+
+import { Ovo, Poppins, Space_Grotesk } from 'next/font/google';
+
+export default{
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./componets/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],// or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -8,6 +15,11 @@ module.exports = {
         darkHover:  '#2a004a',
         darkTheme: '#11001F',
       },
+      fontFamily: {
+        Space_Grotesk: ["Space_Grotesk", "sans-serif"],
+        Poppins: ["Poppins", "sans-serif"],
+        Ovo: ["Ovo", "sans-serif"],
+      }
 
     },
   },
