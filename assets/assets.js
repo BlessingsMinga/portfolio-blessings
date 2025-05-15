@@ -34,9 +34,21 @@ import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
-import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import right_arrow_bold_dark from './right-arrow-dark.png';
+import BlessingsM_ from './BlessingsM_.png';
+import Blob from './Blob.png';
+import box_profile from './box_profile.png';
+import Profile1 from './Profile1.png';
+import Profile2 from './Profile2.jpg';
+
 
 export const assets = {
+
+    Profile1,
+    box_profile,
+    BlessingsM_,
+    Blob,
+    Profile2,
     user_image,
     code_icon,
     code_icon_dark,
@@ -73,7 +85,7 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
 };
 
 export const workData = [
