@@ -16,9 +16,9 @@ export default{
         darkTheme: '#11001F',
       },
       fontFamily: {
-        Space_Grotesk: ["Space_Grotesk", "sans-serif"],
-        Poppins: ["Poppins", "sans-serif"],
-        Ovo: ["Ovo", "sans-serif"],
+        space_Grotesk: ["Space_Grotesk", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        ovo: ["Ovo", "sans-serif"],
       }
 
     },

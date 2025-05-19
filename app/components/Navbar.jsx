@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='fixed top-30 right-0 w-11/12 -z-10 translate-y-[-80%]'>
+    <div className='fixed top-30 right-0 w-11/12 -z-10 translate-y-[-85%]'>
         <Image src={assets.Blob} alt='' className='w-full'/>
 
     </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
         <ul className='hidden md:flex items-center gap-7 lg:gap-13
         rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50'>
             <li><a href="#top">Home</a></li>
-            <li><a href="#top">About me</a></li>
+            <li><a href="#about">About me</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#work">My Work</a></li>
             <li><a href="#contact">Contact me</a></li>

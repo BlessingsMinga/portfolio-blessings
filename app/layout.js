@@ -20,9 +20,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${space_Grotesk.className} ${poppins.className} antialiased`}
+        className={`${space_Grotesk.className} ${poppins.className} antialiased leading-8 
+        overflow-x-hidden`}
       >
         {children}
       </body>
