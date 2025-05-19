@@ -53,9 +53,9 @@ const Header = () => {
             <Image 
               src={assets.right_arrow} 
               alt='' 
-              width={16}
+              width={50}
               height={16}
-              className='w-4 h-4'
+              className='w-6 h-4'
             />
           </a>
 
