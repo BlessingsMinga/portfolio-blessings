@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 * {
-  font-family: spaceGrotesk, sans-serif;
+  font-family: spaceGrotesk, robotoMono, sans-serif;
 }
 
 h3{
