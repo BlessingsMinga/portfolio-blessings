@@ -53,7 +53,7 @@ const Header = () => {
           viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Front-end web developer based in <span className='text-blue-600'>Lilongwe, Malawi</span>.
+          Full-Stack Creative & Data Specialist based in <span className='text-blue-600'>Lilongwe, Malawi</span>.
         </motion.h1>
         
         {/* Description */}
@@ -65,8 +65,8 @@ const Header = () => {
           viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          I am a frontend developer from Lilongwe, Malawi with 10 years of 
-          experience in multiple companies like Microsoft, Tesla and Apple.
+          I'm a web developer and designer from Lilongwe, Malawi. I also work on graphics,
+          branding, and data. I love using tech and creativity to solve problems and build cool things.
         </motion.p>
         
         {/* Action Buttons */}
