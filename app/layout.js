@@ -1,16 +1,18 @@
-import {  Ovo, Poppins, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Space_Grotesk, Roboto_Mono} from 'next/font/google'
 
-const poppins = Poppins({
-  subsets: ["latin"], weight: ["400", "500", "600", "700",]
-});
 
-const ovo= Ovo({
-  subsets: ["latin"], weight: ["400",]
-});
+const robotoMono = Roboto_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto-mono',
+})
 
-const space_Grotesk = Space_Grotesk({
-  subsets: ["latin"], weight: ["400",] 
+const spaceGrotesk = Space_Grotesk({
+  weight: ['300', '400', '500', '600', '700'], // Or any desired weight
+  subsets: ['latin'], 
+  display:'swap',
+  variable: '--font-spacegrotesk', // Or other subsets as needed
 });
 
 export const metadata = {
@@ -22,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${space_Grotesk.className} ${poppins.className} antialiased leading-8 
+        className={`${spaceGrotesk.variable} ${robotoMono.variable} font-sans leading-8 
         overflow-x-hidden`}
       >
         {children}

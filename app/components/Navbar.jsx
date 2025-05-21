@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className='fixed top-30 right-0 w-11/12 -z-10 translate-y-[-85%]'>
+    <div className='fixed top-10 right-0 w-11/12 -z-10 translate-y-[-70%]'>
         <Image src={assets.Blob} alt='' className='w-full'/>
 
     </div>

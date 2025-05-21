@@ -27,7 +27,7 @@ const Header = () => {
             alt='Waving hand' 
             width={24}
             height={24}
-            className='w-6 h-6'
+            className='w-7 h-7'
           />
         </div>
         

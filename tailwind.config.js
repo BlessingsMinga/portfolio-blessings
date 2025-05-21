@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').config} */
-
-import { Ovo, Poppins, Space_Grotesk } from 'next/font/google';
+import { Roboto_Mono , Space_Grotesk } from 'next/font/google'
 
 export default{
   content: [
@@ -16,9 +15,8 @@ export default{
         darkTheme: '#11001F',
       },
       fontFamily: {
-        space_Grotesk: ["Space_Grotesk", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-        ovo: ["Ovo", "sans-serif"],
+        sans: ["var(--font-spacegrotesk)"],
+        mono: ["var(--font-roboto-mono)"],
       }
 
     },

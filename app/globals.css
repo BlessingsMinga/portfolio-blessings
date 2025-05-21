@@ -1,10 +1,11 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
+
+
+@tailwind utilities;
 @tailwind utilities;
 
 * {
-  font-family: Space_Grotesk, sans-serif;
+  font-family: spaceGrotesk, sans-serif;
 }
 
 h3{
@@ -12,6 +13,6 @@ h3{
 }
 
 h1 {
-  font-family: Space_Grotesk, sans-serif;
+  font-family: spaceGrotesk, sans-serif;
 }
 
