@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/space-grotesk": "^5.2.7",
     "@next/font": "^14.2.15",
     "framer-motion": "^12.12.1",
+    "motion": "^12.12.1",
     "next": "^15.3.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

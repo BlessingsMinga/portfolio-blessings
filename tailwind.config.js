@@ -15,7 +15,7 @@ export default{
         darkTheme: '#11001F',
       },
       fontFamily: {
-        sans: ["var(--font-spacegrotesk)"],
+        sans: ['Space Grotesk', 'sans-serif'],
         mono: ["var(--font-roboto-mono)"],
       }
 
