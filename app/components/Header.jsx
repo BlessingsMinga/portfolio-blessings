@@ -65,7 +65,7 @@ const Header = () => {
           viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          I'm a web developer and designer from Lilongwe, Malawi. I also work on graphics,
+          I'm a web developer and designer. I also work on graphics, UX/UI,
           branding, and data. I love using tech and creativity to solve problems and build cool things.
         </motion.p>
         
