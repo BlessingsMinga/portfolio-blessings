@@ -92,7 +92,7 @@ const About = () => {
               ))}
             </motion.ul>
 
-            <motion.h4 className='my-6 text-gray-700' variants={item}>Tools I use</motion.h4>
+            <motion.h4 className='my-6 mt-9 text-gray-700' variants={item}>Tools I use</motion.h4>
 
             <motion.ul 
               className='flex items-center gap-3 sm:gap-5 flex-wrap'
