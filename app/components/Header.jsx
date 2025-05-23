@@ -2,6 +2,7 @@ import { assets } from '../../assets/assets';
 import Image from 'next/image';
 import React from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Header = () => {
   // Scroll progress tracking
@@ -53,8 +54,19 @@ const Header = () => {
           viewport={{ once: false }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Full-Stack Creative & Data Specialist based in <span className='text-blue-600'>Lilongwe, Malawi</span>.
+          Full-Stack Creative & Data Specialist based in <span className='text-blue-600'>Lilongwe, Malawi.</span>
         </motion.h1>
+
+        <div className="absolute left-0 top-1/1 -translate-y-1/2 w-[600px] h-[600px] opacity-30 -z-10 pointer-events-none">
+        <DotLottieReact
+          src="https://lottie.host/2c60e1ce-476a-4288-bc48-be6a19a4b764/0C40bodDqd.lottie"
+          loop
+          autoplay
+          className="w-full h-full"
+        />
+      </div>
+
+
         
         {/* Description */}
         <motion.p 
