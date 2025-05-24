@@ -66,14 +66,14 @@ const Navbar = () => {
                             height={24}
                         />
                     </button>
-                    <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4'>
+                    <a href="#contact" className='hidden lg:flex items-center gap-3 px-10 py-2.5 border border-blue-600 rounded-full ml-4'>
                         Contact
                         <Image
                             src={assets.arrow_icon}
-                            className='w-3'
+                            className='w-3.5'
                             alt="Contact Us"
-                            width={12}
-                            height={12}
+                            width={40}
+                            height={40}
                         />
                     </a>
 
@@ -100,7 +100,7 @@ const Navbar = () => {
                         />
                     </div>
                     <li><a onClick={closeMenu} href="#top">Home</a></li>
-                    <li><a onClick={closeMenu} href="#top">About me</a></li>
+                    <li><a onClick={closeMenu} href="#about">About me</a></li>
                     <li><a onClick={closeMenu} href="#services">Services</a></li>
                     <li><a onClick={closeMenu} href="#work">My Work</a></li>
                     <li><a onClick={closeMenu} href="#contact">Contact me</a></li>

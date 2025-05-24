@@ -60,7 +60,7 @@ const About = () => {
             animate={controls}
             variants={imageAnimation}
           >
-            <Image src={assets.box_profile} alt='Blessings Minga Image' className='w-full rounded-3xl'/>
+            <Image src={assets.box_profile} alt='Blessings Minga Image' className='w-full border-[5px] border-blue-200 rounded-3xl'/>
           </motion.div>
 
           <motion.div 
@@ -85,8 +85,8 @@ const About = () => {
                   variants={item}
                   whileHover={{ y: -5 }}
                 >
-                  <Image src={icon} alt={title} className='w-7 mt-3'/>
-                  <h3 className='my-4 font-semibold text-blue-950'>{title}</h3>
+                  <Image src={icon} alt={title} className='w-9 mt-2'/>
+                  <h3 className='my-4 font-semibold text-blue-900'>{title}</h3>
                   <p className='text-gray-600 text-sm'>{description}</p>
                 </motion.li>
               ))}

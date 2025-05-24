@@ -89,8 +89,8 @@ const Header = () => {
           {/* Contact me button - comes from left */}
           <motion.a 
             href="#contact" 
-            className='px-8 py-3 rounded-full bg-black text-white flex items-center justify-center gap-2 
-            hover:bg-gray-800 transition-colors duration-200 w-full sm:w-auto'
+            className='px-8 py-3 rounded-full bg-blue-600 text-white flex items-center justify-center gap-2 
+            hover:bg-blue-400 transition-colors duration-200 w-full sm:w-auto'
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
@@ -102,9 +102,9 @@ const Header = () => {
             <Image 
               src={assets.right_arrow} 
               alt='' 
-              width={50}
-              height={16}
-              className='w-6 h-4'
+              width={80}
+              height={40}
+              className='w-5 h-5'
             />
           </motion.a>
 
@@ -112,8 +112,8 @@ const Header = () => {
           <motion.a 
             href="/sample.pdf" 
             download 
-            className='px-8 py-3 rounded-full border border-gray-300 flex items-center justify-center gap-2 
-            hover:bg-gray-100 transition-colors duration-200 w-full sm:w-auto'
+            className='px-8 py-3 rounded-full border border-blue-600 flex items-center justify-center gap-2 
+            hover:bg-blue-400 transition-colors duration-200 w-full sm:w-auto'
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}

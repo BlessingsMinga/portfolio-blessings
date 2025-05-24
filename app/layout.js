@@ -6,13 +6,15 @@ const robotoMono = Roboto_Mono({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-roboto-mono',
+   preload: false // 
 })
 
 const spaceGrotesk = Space_Grotesk({
   weight: ['300', '400', '500', '600', '700'], // Or any desired weight
   subsets: ['latin'], 
   display:'swap',
-  variable: '--font-spacegrotesk', // Or other subsets as needed
+  variable: '--font-spacegrotesk', 
+   preload: false // // Or other subsets as needed
 });
 
 export const metadata = {
