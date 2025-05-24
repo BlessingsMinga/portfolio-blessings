@@ -54,14 +54,23 @@ const About = () => {
         </motion.div>
 
         <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
-          <motion.div 
-            className='w-64 sm:w-80 rounded-3xl max-w-none'
-            initial="hidden"
-            animate={controls}
-            variants={imageAnimation}
-          >
-            <Image src={assets.box_profile} alt='Blessings Minga Image' className='w-full border-[5px] border-blue-200 rounded-3xl'/>
-          </motion.div>
+<motion.div 
+  className='w-64 sm:w-80 rounded-3xl max-w-none'
+  initial="hidden"
+  animate={controls}
+  variants={imageAnimation}
+  whileHover={{ 
+    scale: 1.05,
+    boxShadow: "0 10px 15px -5px rgba(0, 27, 187, 0.8), 0 2px 5px -3px rgba(131, 149, 255, 0.8)"
+  }}
+  transition={{ type: "spring", stiffness: 300 }}
+>
+  <Image 
+    src={assets.box_profile} 
+    alt='Blessings Minga Image' 
+    className='w-full border-[5px] rounded-3xl'
+  />
+</motion.div>
 
           <motion.div 
             className='flex-1'
