@@ -7,6 +7,21 @@ const Navbar = () => {
     const sideMenuRef = useRef();
     const { scrollYProgress } = useScroll();
     const opacity = useTransform(scrollYProgress, [0, 0.1], [2, 0]);
+    const navBackground = useTransform(
+        scrollYProgress,
+        [0, 0.1],
+        ['transparent', 'rgba(255, 255, 222, 0.4)']
+    );
+    const navBorder = useTransform(
+        scrollYProgress,
+        [0, 0.1],
+        ['0px', '1px solid rgb(21, 93, 252)']
+    );
+    const navShadow = useTransform(
+        scrollYProgress,
+        [0, 0.1],
+        ['none', '0 4px 6px -1px rgba(0, 0, 0, 0.1)']
+    );
 
     const openMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(-16rem)';
@@ -37,7 +52,15 @@ const Navbar = () => {
             </div>
 
             {/* Main Navigation */}
-            <nav className='w-full fixed px-5 lg:px-8 xl:px-[-8%] py-4 flex items-center justify-between z-50'>
+            <motion.nav
+                className='w-full fixed px-5 lg:px-8 xl:px-[-8%] py-4 flex items-center justify-between z-50'
+                style={{
+                    background: navBackground,
+                    borderBottom: navBorder,
+                    boxShadow: navShadow,
+                    backdropFilter: 'blur(10px)'
+                }}
+            >
                 <a href="#top">
                     <Image
                         src={assets.BlessingsM_}
@@ -48,7 +71,7 @@ const Navbar = () => {
                     />
                 </a>
 
-                <ul className='hidden md:flex items-center gap-7 lg:gap-13 rounded-full px-12 py-3 bg-white/50 shadow backdrop-blur-sm'>
+                <ul className='hidden md:flex items-center gap-5 lg:gap-10 font-normal'>
                     <li><a href="#top">Home</a></li>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#services">Services</a></li>
@@ -105,7 +128,7 @@ const Navbar = () => {
                     <li><a onClick={closeMenu} href="#work">My Work</a></li>
                     <li><a onClick={closeMenu} href="#contact">Contact me</a></li>
                 </ul>
-            </nav>
+            </motion.nav>
         </>
     );
 };
