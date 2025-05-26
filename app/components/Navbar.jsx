@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 const Navbar = () => {
     const sideMenuRef = useRef();
     const { scrollYProgress } = useScroll();
-    const opacity = useTransform(scrollYProgress, [0, 0.1], [0.3, 0]);
+    const opacity = useTransform(scrollYProgress, [0, 0.1], [2, 0]);
 
     const openMenu = () => {
         sideMenuRef.current.style.transform = 'translateX(-16rem)';
@@ -48,7 +48,7 @@ const Navbar = () => {
                     />
                 </a>
 
-                <ul className='hidden md:flex items-center gap-7 lg:gap-13 rounded-full px-12 py-3 bg-white/50 shadow-sm backdrop-blur-sm'>
+                <ul className='hidden md:flex items-center gap-7 lg:gap-13 rounded-full px-12 py-3 bg-white/50 shadow backdrop-blur-sm'>
                     <li><a href="#top">Home</a></li>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#services">Services</a></li>
