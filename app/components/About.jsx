@@ -50,7 +50,7 @@ const About = () => {
       >
         <motion.div variants={item}>
           <h4 className='text-center mb-2 text-lg'>Introduction</h4>
-          <h2 className='text-center font-bold text-7xl'>About me</h2>
+          <h2 className='text-center font-bold text-7xl text-blue-600'>About me</h2>
         </motion.div>
 
         <div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>

@@ -98,7 +98,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Contact me 
+            Reach out
             <Image 
               src={assets.right_arrow} 
               alt='' 
