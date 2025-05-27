@@ -47,7 +47,7 @@ const Navbar = () => {
             </motion.div>
 
             {/* Blob decoration */}
-            <div className='fixed top-10 right-0 w-11/12 -z-40 translate-y-[-70%]'>
+            <div className='fixed top-7 right-0 w-11/12 -z-40 translate-y-[-70%]'>
                 <Image src={assets.Blob} alt='' className='w-full' />
             </div>
 
