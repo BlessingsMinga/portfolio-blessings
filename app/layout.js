@@ -1,3 +1,4 @@
+import WhatsappLIve from "./components/WhatsappLIve";
 import "./globals.css";
 import { Space_Grotesk, Roboto_Mono} from 'next/font/google'
 
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
         className={`${spaceGrotesk.variable} ${robotoMono.variable} font-sans leading-8 
         overflow-x-hidden`}
       >
-        {children}
+        {children}<WhatsappLIve />
       </body>
     </html>
   );
