@@ -62,7 +62,7 @@ const Services = () => {
         transition={{ duration: 0.6 }}
         className="text-center"
       >
-        <h4 className='mb-2 text-lg'>
+        <h4 className='mb-2 text-3xl'>
           What I offer
         </h4>
         <h2 className='text-7xl font-bold text-blue-600'>

@@ -49,7 +49,7 @@ const About = () => {
         variants={container}
       >
         <motion.div variants={item}>
-          <h4 className='text-center mb-2 text-lg'>Introduction</h4>
+          <h4 className='text-center mb-2 text-3xl'>Introduction</h4>
           <h2 className='text-center font-bold text-7xl text-blue-600'>About me</h2>
         </motion.div>
 
