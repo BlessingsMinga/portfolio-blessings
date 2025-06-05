@@ -1,32 +1,95 @@
-import { assets } from '../../assets/assets';
-import Image from 'next/image';
 import React from 'react';
+import { motion } from 'framer-motion';
+import { RiMailLine, RiGithubFill, RiLinkedinFill, RiInstagramLine } from 'react-icons/ri';
+import Image from 'next/image';
+import { assets } from '../../assets/assets';
 
 const Footer = () => {
+  const socialLinks = [
+    { 
+      name: 'Github', 
+      url: 'https://github.com/BlessingsMinga', 
+      icon: <RiGithubFill size={20} /> 
+    },
+    { 
+      name: 'LinkedIn', 
+      url: 'https://www.linkedin.com/in/blessings-minga-9b6516256/', 
+      icon: <RiLinkedinFill size={20} /> 
+    },
+    { 
+      name: 'Instagram', 
+      url: 'https://instagram.com/blessingzmnga/', 
+      icon: <RiInstagramLine size={20} /> 
+    }
+  ];
+
   return (
-    <div>
+    <footer className="bg-gray-50 pt-20 pb-10 px-[10%]">
+      <div className="max-w-6xl mx-auto">
+        {/* Logo and email */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center mb-12"
+        >
+          <Image src={assets.BlessingsM_} alt='' className='w-36 mx-auto mb-2' />
+          
+          <motion.a 
+            href="mailto:blessingsminga11@gmail.com"
+            className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
+            whileHover={{ scale: 1.05 }}
+          >
+            <RiMailLine size={20} />
+            <span>blessingsminga11@gmail.com</span>
+          </motion.a>
+        </motion.div>
 
-    <div className='mt-20'>
-        <Image src={assets.BlessingsM_} alt='' className='w-36 mx-auto' />
+        {/* Copyright and social links */}
+        <div className="border-t border-gray-200 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-gray-500 text-sm"
+          >
+            Copyright © {new Date().getFullYear()} Blessings Minga. All rights reserved.
+          </motion.p>
 
-        <div className='w-max flex items-center gap-2 mx-auto'>
-            <Image src={assets.mail_icon} alt='' className='w-6'/>
-            blessingsminga11@gmail.com
+          <motion.ul 
+            className="flex gap-6"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ staggerChildren: 0.1 }}
+          >
+            {socialLinks.map((link, index) => (
+              <motion.li 
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+              >
+                <motion.a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors flex items-center gap-1"
+                  whileHover={{ y: -2 }}
+                  aria-label={link.name}
+                >
+                  {link.icon}
+                  <span className="sr-only">{link.name}</span>
+                </motion.a>
+              </motion.li>
+            ))}
+          </motion.ul>
         </div>
-    </div>
+      </div>
+    </footer>
+  );
+};
 
-    <div className='text-center sm:flex items-center justify-between border border-t border-gray-400 mx-[10%] mt-12 py-6'>
-        <p>Copyright &#169; 2025 Blessings Minga. All rights reserved.</p>
-        <ul>
-            <li><a target='_blank' href="https://github.com/BlessingsMinga">Github</a></li>
-            <li><a target='_blank' href="https://www.linkedin.com/in/blessings-minga-9b6516256/">LinkedIn</a></li>
-            <li><a target='_blank' href="https://instagram.com/blessingzmnga/">Instagram</a></li>
-
-        </ul>
-    </div>
-      
-    </div>
-  )
-}
-
-export default Footer
+export default Footer;
