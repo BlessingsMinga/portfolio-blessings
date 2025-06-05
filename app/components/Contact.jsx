@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <div id='contact' className='w-full px-[12%] py-20 scroll-mt-20 bg-gray-50 relative overflow-hidden'>
       {/* Background Lottie Animation */}
-      <div className='absolute inset-0 z-0 opacity-90'>
+      <div className='absolute inset-0 z-0 opacity-30'>
         <DotLottieReact
           src="https://lottie.host/91d35c19-f5f2-416e-bfa4-4a4c38c25d7e/YmLpZ1KNZA.lottie"
           loop

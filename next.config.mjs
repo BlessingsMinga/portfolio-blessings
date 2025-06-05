@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: 'export', // Add this line for static export
+  images: {
+    unoptimized: true, // Required for static export
+  },
+}
 
-export default nextConfig;
+export default nextConfig
