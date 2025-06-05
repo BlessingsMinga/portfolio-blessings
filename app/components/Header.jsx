@@ -110,7 +110,7 @@ const Header = () => {
 
           {/* My resume button - comes from right */}
           <motion.a 
-            href="/sample.pdf" 
+            href="https://drive.google.com/file/d/1cL6ahU9ICUZMbsg3yeivWhXFeWgrviTX/view?usp=sharing"
             download 
             className='px-8 py-3 rounded-full border border-blue-600 flex items-center justify-center gap-2 
             hover:bg-blue-400 transition-colors duration-200 w-full sm:w-auto'
