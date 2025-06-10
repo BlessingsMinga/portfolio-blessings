@@ -9,6 +9,15 @@
   }
 }
 
+/* globals.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
 .whatsapp-link {
   position: fixed;
   bottom: -80px;
