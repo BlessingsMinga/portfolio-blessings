@@ -48,7 +48,7 @@ const Navbar = () => {
 
             {/* Blob decoration */}
             <div className='fixed top-7 right-0 w-11/12 -z-40 translate-y-[-70%]'>
-                <Image src={assets.Blob} alt='' className='w-full' />
+                <Image src={assets.Blob} alt='' className='w-full' priority />
             </div>
 
             {/* Main Navigation */}
@@ -112,7 +112,7 @@ const Navbar = () => {
                 </div> 
 
                 {/* Mobile menu */}
-                <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500'>
+                <ul ref={sideMenuRef} className='flex  md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-blue-600 bg-opacity-50  transition duration-500'>
                     <div onClick={closeMenu} className='absolute right-6 top-6'>
                         <Image
                             src={assets.close_black}
@@ -122,11 +122,11 @@ const Navbar = () => {
                             height={20}
                         />
                     </div>
-                    <li><a onClick={closeMenu} href="#top">Home</a></li>
-                    <li><a onClick={closeMenu} href="#about">About me</a></li>
-                    <li><a onClick={closeMenu} href="#services">Services</a></li>
-                    <li><a onClick={closeMenu} href="#work">My Work</a></li>
-                    <li><a onClick={closeMenu} href="#contact">Contact me</a></li>
+                    <li><a onClick={closeMenu} className='text-gray-50' href="#top">Home</a></li>
+                    <li><a onClick={closeMenu} className='text-gray-50' href="#about">About me</a></li>
+                    <li><a onClick={closeMenu} className='text-gray-50' href="#services">Services</a></li>
+                    <li><a onClick={closeMenu} className='text-gray-50' href="#work">My Work</a></li>
+                    <li><a onClick={closeMenu} className='text-gray-50' href="#contact">Contact me</a></li>
                 </ul>
             </motion.nav>
         </>
