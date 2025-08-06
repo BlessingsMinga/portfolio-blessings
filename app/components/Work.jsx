@@ -93,13 +93,16 @@ const Work = () => {
               <div>
                 <h2 className='font-semibold'>{project.title}</h2>
                 <p className='text-sm'>{project.description}</p>
+                
               </div>
 
               <motion.div
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Image src={assets.send_icon} alt='Icon' className='w-5' />
+                <a href={project.Link} target="_blank" rel="noopener noreferrer">
+                  <Image src={assets.send_icon} alt='Icon' className='w-5'/>
+                </a>
               </motion.div>
             </motion.div>
           </motion.div>

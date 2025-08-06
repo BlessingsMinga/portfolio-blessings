@@ -45,6 +45,7 @@ import Blob from './Blob.png';
 import box_profile from './box_profile.png';
 import Profile1 from './Profile1.png';
 import Profile2 from './Profile2.jpg';
+import Link from 'next/link';
 
 
 export const assets = {
@@ -118,6 +119,7 @@ export const workData = [
         title: 'Graphics design',
         description: 'Visual Designs',
         bgImage: '/work-4.png',
+        Link: 'https://www.behance.net/blessingsminga',
     },
 ]
 
