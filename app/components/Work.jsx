@@ -62,7 +62,7 @@ const Work = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
         >
-          Links to be clickable soon <span className='text-blue-600 animate-pulse'>....</span>
+          For now, browse through my creative work <span className='text-blue-600 animate-pulse'>....</span>
         </motion.p>
       </motion.div>
 

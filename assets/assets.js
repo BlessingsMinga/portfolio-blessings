@@ -104,6 +104,7 @@ export const workData = [
         title: 'PezaHome',
         description: 'Web Development',
         bgImage: '/work-1.png',
+        Link: '/Project',
     },
     {
         title: 'Money App',
