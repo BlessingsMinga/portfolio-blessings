@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blessings Portfolio
 
-## Getting Started
+A personal portfolio built with Next.js, Tailwind CSS and Framer Motion showcasing UI projects and creative work.
 
-First, run the development server:
+## Overview
+This repository contains a modern, responsive portfolio site using Next.js (App Router). The UI uses Tailwind CSS for styling and Framer Motion for animations. Project data (projects, assets) are centrally defined so content is easy to update.
 
+## Features
+- Responsive layout
+- Animated components with Framer Motion
+- Image optimization via Next.js `Image`
+- Simple content model for projects/assets
+- Netlify-ready config included
+
+## Tech Stack
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- Framer Motion
+- Netlify (deploy configuration present)
+
+## Important files
+- [app/page.js](app/page.js) — site entry page.
+- [app/layout.js](app/layout.js) — global layout.
+- [app/globals.css](app/globals.css) — global styles.
+- [app/components/Work.jsx](app/components/Work.jsx) — portfolio grid and project card.
+- [app/components/Contact.jsx](app/components/Contact.jsx) — contact section.
+- [assets/assets.js](assets/assets.js) — images and `workData` used across the site (update this to change projects).
+- [package.json](package.json) — scripts and dependencies.
+- [tailwind.config.js](tailwind.config.js) — Tailwind configuration.
+- [next.config.mjs](next.config.mjs) — Next.js config.
+- [netlify.toml](netlify.toml) — Netlify deploy config.
+
+## Getting started
+
+Prerequisites
+- Node.js (recommended v18+)
+- npm or pnpm
+
+Install dependencies
 ```bash
-npm run dev
+npm install
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+pnpm install
