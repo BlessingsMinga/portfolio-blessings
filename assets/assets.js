@@ -107,9 +107,10 @@ export const workData = [
         Link: '/Project',
     },
     {
-        title: 'Money App',
-        description: 'Mobile app design',
-        bgImage: '/work-2.png',
+        title: 'Mlongo Ai Bot',
+        description: 'AI assistants',
+        bgImage: '/mlongo-ai.jpg',
+        Link: 'Mlongo.jsx',
     },
     {
         title: 'Ministry of Lands',
