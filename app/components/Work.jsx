@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import { assets, workData } from '../../assets/assets'
+import { workData } from '../../assets/assets'
 import { motion } from 'framer-motion'
 import React from 'react'
+import { ArrowUpRight } from 'lucide-react'
 
 // Animation variants
 const container = {
@@ -101,7 +102,7 @@ const Work = () => {
                 whileTap={{ scale: 0.9 }}
               >
                 <a href={project.Link} target="_blank" rel="noopener noreferrer">
-                  <Image src={assets.send_icon} alt='Icon' className='w-5'/>
+                  <ArrowUpRight className='w-5' />
                 </a>
               </motion.div>
             </motion.div>

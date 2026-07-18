@@ -3,6 +3,7 @@ import { assets, infoList, toolsData } from '../../assets/assets';
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Code2, GraduationCap, FolderGit2 } from 'lucide-react';
 
 const About = () => {
   const controls = useAnimation();
@@ -87,14 +88,16 @@ const About = () => {
               className='grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-2xl'
               variants={container}
             >
-              {infoList.map(({icon, iconDark, title, description}, index) => (
+              {infoList.map(({title, description}, index) => (
                 <motion.li 
                   key={index} 
                   className='border-[0.5px] border-blue-800 rounded-xl p-6 cursor-pointer hover:shadow-lg transition-shadow'
                   variants={item}
                   whileHover={{ y: -5 }}
                 >
-                  <Image src={icon} alt={title} className='w-9 mt-2'/>
+                  {(title === 'Languages' && <Code2 className='w-9 h-9 mt-2 text-blue-600' />) ||
+                   (title === 'Education' && <GraduationCap className='w-9 h-9 mt-2 text-blue-600' />) ||
+                   (title === 'Projects' && <FolderGit2 className='w-9 h-9 mt-2 text-blue-600' />)}
                   <h3 className='my-4 font-semibold text-blue-900'>{title}</h3>
                   <p className='text-gray-600 text-sm'>{description}</p>
                 </motion.li>
@@ -110,7 +113,7 @@ const About = () => {
               {toolsData.map((tool, index) => (
                 <motion.li 
                   key={index} 
-                  className='flex items-center justify-center w-12 smartw-14 aspect-square border border-blue-800 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'
+className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-blue-800 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'
                   variants={item}
                   whileHover={{ scale: 1.1 }}
                 >

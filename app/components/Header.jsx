@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { ArrowRight, Download, HandMetal } from "lucide-react";
 
 const Header = () => {
   // Scroll progress tracking
@@ -34,12 +35,13 @@ const Header = () => {
             whileInView={{ rotate: [0, 15, -15, 0] }}
             viewport={{ once: false }}
             transition={{ duration: 0.8, delay: 0.4 }}
+            className="w-7 h-7"
           >
             <Image
               src={assets.hand_icon}
               alt="Waving hand"
-              width={24}
-              height={24}
+              width={28}
+              height={28}
               className="w-7 h-7"
             />
           </motion.div>
@@ -106,13 +108,7 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
           >
             Reach out
-            <Image
-              src={assets.right_arrow}
-              alt=""
-              width={80}
-              height={40}
-              className="w-5 h-5"
-            />
+            <ArrowRight className="w-5 h-5" />
           </motion.a>
 
           {/* My resume button - comes from right */}
@@ -134,13 +130,7 @@ const Header = () => {
             whileTap={{ scale: 0.95 }}
           >
             My resume
-            <Image
-              src={assets.download_icon}
-              alt=""
-              width={16}
-              height={16}
-              className="w-4 h-4"
-            />
+            <Download className="w-4 h-4" />
           </motion.a>
         </motion.div>
       </div>

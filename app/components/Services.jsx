@@ -1,6 +1,6 @@
 import { serviceData } from '../../assets/assets';
 import React from 'react';
-import { RiComputerLine, RiCodeSSlashLine, RiSmartphoneLine, RiCloudLine } from 'react-icons/ri';
+import { Monitor, Smartphone, Palette, Brush } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -37,19 +37,19 @@ const Services = () => {
   const servicesWithIcons = [
     {
       ...serviceData[0],
-      icon: <RiComputerLine className="text-3xl text-blue-600" />
+      icon: <Monitor className="text-3xl text-blue-600" />
     },
     {
       ...serviceData[1],
-      icon: <RiCodeSSlashLine className="text-3xl text-blue-600" />
+      icon: <Smartphone className="text-3xl text-blue-600" />
     },
     {
       ...serviceData[2],
-      icon: <RiSmartphoneLine className="text-3xl text-blue-600" />
+      icon: <Brush className="text-3xl text-blue-600" />
     },
     {
       ...serviceData[3],
-      icon: <RiCloudLine className="text-3xl text-blue-600" />
+      icon: <Palette className="text-3xl text-blue-600" />
     }
   ];
 

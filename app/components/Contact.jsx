@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -130,7 +131,7 @@ const Contact = () => {
               disabled={isSubmitting}
             >
               {isSubmitting ? 'Sending...' : 'Submit'}
-              {!isSubmitting && <Image src={assets.right_arrow_white} alt='' className='w-4'/>}
+              {!isSubmitting && <ArrowRight className='w-4' />}
             </motion.button>
           </div>
         </motion.form>

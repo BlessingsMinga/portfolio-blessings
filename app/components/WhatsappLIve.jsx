@@ -1,8 +1,8 @@
 "use client"
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { assets } from '../../assets/assets';
 import { motion, useAnimation, useInView } from 'framer-motion';
+import { assets } from '../../assets/assets';
 
 const WhatsappLive = () => {
     const whatsappNumber = "+265992092766";

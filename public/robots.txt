@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://blessingsminga.vercel.app
+
+# Sitemaps
+Sitemap: https://blessingsminga.vercel.app/sitemap.xml
