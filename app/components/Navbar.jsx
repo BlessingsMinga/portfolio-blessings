@@ -55,7 +55,6 @@ const Navbar = () => {
           src={assets.Blob}
           alt=""
           className="w-full"
-          priority
           sizes="100vw"
         />
       </div>

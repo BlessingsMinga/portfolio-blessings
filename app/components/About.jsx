@@ -76,7 +76,7 @@ const About = () => {
               className="w-full border-[5px] rounded-3xl"
               width={320}
               height={320}
-              priority
+              loading="lazy"
             />
           </motion.div>
 

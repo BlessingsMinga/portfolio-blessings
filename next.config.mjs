@@ -4,7 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for static export
   },
-  productionBrowserSourceMaps: true,
+  // Source maps add several megabytes to each production deployment.
+  productionBrowserSourceMaps: false,
 }
 
 export default nextConfig

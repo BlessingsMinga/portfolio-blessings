@@ -1,5 +1,5 @@
 import code_icon from "./code-icon.png";
-import hero from "./hero.png";
+import hero from "./hero.webp";
 import code_icon_dark from "./code-icon-dark.png";
 import edu_icon from "./edu-icon.png";
 import edu_icon_dark from "./edu-icon-dark.png";
@@ -14,8 +14,8 @@ import django from "./django.png";
 import illustrator from "./illustrator.png";
 import photoshop from "./photoshop.png";
 import python from "./python.png";
-import react from "./react.png";
-import tailwind from "./tailwind.png";
+import react from "./react.webp";
+import tailwind from "./tailwind.webp";
 import right_arrow_white from "./right-arrow-white.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
@@ -39,20 +39,16 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-dark.png";
-import BlessingsM_ from "./BlessingsM_.png";
-import Blob from "./Blob.png";
-import box_profile from "./box_profile.png";
-import Profile1 from "./Profile1.png";
-import Profile2 from "./Profile2.jpg";
+import BlessingsM_ from "./BlessingsM_.webp";
+import Blob from "./Blob.webp";
+import box_profile from "./box_profile.webp";
 
 export const assets = {
-  Profile1,
   whatsapp,
   hero,
   box_profile,
   BlessingsM_,
   Blob,
-  Profile2,
   code_icon,
   code_icon_dark,
   edu_icon,
@@ -104,18 +100,18 @@ export const workData = [
   {
     title: "Mlongo Ai Bot",
     description: "AI assistants",
-    bgImage: "/mlongo-ai.jpg",
+    bgImage: "/mlongo-ai.webp",
     Link: "Mlongo.jsx",
   },
   {
     title: "Ministry of Lands",
     description: "Government Web Design",
-    bgImage: "/work-3.png",
+    bgImage: "/work-3.webp",
   },
   {
     title: "Graphics design",
     description: "Visual Designs",
-    bgImage: "/work-4.png",
+    bgImage: "/work-4.webp",
     Link: "https://www.behance.net/blessingsminga",
   },
 ];

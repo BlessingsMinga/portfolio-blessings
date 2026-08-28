@@ -57,13 +57,20 @@ const Work = () => {
         {workData.map((project, index) => (
           <motion.div
             key={index}
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer overflow-hidden group"
-            style={{ backgroundImage: `url(${project.bgImage})` }}
+            className="aspect-square rounded-lg relative cursor-pointer overflow-hidden group"
             variants={item}
             whileHover={{ scale: 1.03, transition: { duration: 0.3, ease: "easeOut" } }}
             role="article"
             aria-label={`Project: ${project.title}`}
           >
+            <Image
+              src={project.bgImage}
+              alt=""
+              fill
+              sizes="(max-width: 767px) 76vw, (max-width: 1023px) 38vw, 21vw"
+              className="object-cover"
+              loading="lazy"
+            />
             {/* Gradient overlay */}
             <div
               className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"

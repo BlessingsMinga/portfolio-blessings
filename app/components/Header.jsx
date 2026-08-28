@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
+import SplitText from "./SplitText";
 
 const Header = () => {
   // Animation variants for cleaner code
@@ -45,13 +46,19 @@ const Header = () => {
         </motion.div>
 
         {/* Main Heading */}
-        <motion.h1
+        <SplitText
+          text="Full-Stack Creative & Data Specialist based in Lilongwe, Malawi."
           className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight"
-          {...fadeInUp(0.2)}
-        >
-          Full-Stack Creative & Data Specialist based in{" "}
-          <span className="text-blue-600">Lilongwe, Malawi.</span>
-        </motion.h1>
+          tag="h1"
+          delay={30}
+          duration={0.8}
+          splitType="chars"
+          from={{ opacity: 0, y: 30 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.15}
+          rootMargin="-50px"
+          textAlign="center"
+        />
 
         {/* Description */}
         <motion.p
